@@ -1,0 +1,118 @@
+/* The selector "*" select all the elements in the page */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Tag Selector */
+p, h1 {
+    color: purple;
+}
+
+/* Parent Selector */
+body div section p,
+body div section h1 {
+    color: aqua;
+}
+
+.pai.filha {
+    color: brown;
+}
+
+/* brother selector */
+/* Only the first brother, adjacent selector */
+.brother1 + .brother2 {
+    background-color: chartreuse;
+}
+
+/* brother selector */
+/* All the brothers */
+.brother1 ~ .brother2 {
+    background-color: darkgoldenrod;
+}
+
+
+/* ATTRIBUTES SELECTORS */
+/* Attribute Selector */
+[attribute-name] {
+    background-color: springgreen;
+}
+
+/* Attribute Selector with Value */
+[attribute-name="value"] {
+    background-color: springgreen;
+}
+
+/* Attribute Selector with at least the specified Value */
+[attribute-name~="value"] {
+    background-color: springgreen;
+}
+
+/* Attribute Selector which starts with the specified value followed by a "-" */
+/* The class must be first in the tag's list of classes */
+[attribute-name|="value"] {
+    background-color: springgreen;
+}
+
+/* Attribute Selector which starts with the specified value */
+[attribute-name^="va"] {
+    background-color: springgreen;
+}
+
+/* Attribute Selector which ends with the specified value */
+[attribute-name$="lue"] {
+    background-color: springgreen;
+}
+
+/* Attribute Selector which contains the specified value */
+[attribute-name*="alu"] {
+    background-color: springgreen;
+}
+
+/* PSEUDO-CLASSES */
+/* When the mouse is over the element */
+.element:hover {
+    background-color: springgreen;
+}
+
+input:enabled {
+    cursor: not-allowed;
+}
+
+/* NOT */
+/* Select all elements with ".class" not the element with class ".middle" */
+.class:not(.middle) {
+    background-color: aquamarine;
+}
+
+.class:not(:checked) {
+    background-color: cadetblue;
+}
+
+/* NTH-CHILD */
+/* Select the elements which correspond with the calc within the "()" */
+
+/* Select the index 2 */
+.class:nth-child(2) {
+    background-color: yellow;
+}
+
+/* Select the even indexes */
+.class:nth-child(even) {
+    background-color: yellowgreen;
+}
+
+/* Select the odd indexes */
+.class:nth-child(odd) {
+    background-color: magenta;
+}
+
+/* Select the indexes which are multiple of "3" */
+.class:nth-child(3n) {
+    background-color: hotpink;
+}
+
+/* Select the indices that start from "5" and jump from "3" to "3" */
+.class:nth-child(3n + 5) {
+    background-color: lightcyan;
+}

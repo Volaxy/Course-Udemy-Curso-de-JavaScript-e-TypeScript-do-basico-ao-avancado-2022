@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            caption-side: bottom;
+        }
+
+        table td, table th {
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+
+        table tfoot {
+            background: #eee;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In eveniet aperiam illo similique odio corporis recusandae, distinctio pariatur error blanditiis enim ipsum quidem aut quos asperiores debitis repudiandae. Sequi, quia!</p>
+
+    <table>
+        <caption>Description of the Table</caption>
+        <thead>
+            <tr>
+                <th>Título 1</th>
+                <th>Título 2</th>
+                <th>Título 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Corpo 1</td>
+                <td>Corpo 2</td>
+                <td>Corpo 3</td>
+            </tr>
+            
+            <tr>
+                <td colspan="2">Corpo 1</td>
+                <td>Corpo 3</td>
+            </tr>
+            
+            <tr>
+                <td>Corpo 1</td>
+                <td>Corpo 2</td>
+                <td>Corpo 3</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Corpo 1</td>
+                <td>Corpo 2</td>
+                <td>Corpo 3</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
