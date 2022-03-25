@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About my Name</title>
+</head>
+<body>
+    <script>
+        const fullName = prompt("Enter your full name:");
+
+        // The "document" is the HTML documento in the page
+        // The "innerHTML" is the HTML inside the body of the HTML document
+        document.body.innerHTML += `Your name is: <b>${fullName}</b><br/>`;
+        document.body.innerHTML += `Your name has <b>${fullName.length}</b> letters <br/>`;
+        document.body.innerHTML += `The second letter of your name is: <b>${fullName[1]}</b><br/>`;
+        document.body.innerHTML += `What is the first index of the letter "A" in your name? <b>${fullName.indexOf("a")}</b><br/>`;
+        document.body.innerHTML += `What is the last index of the letter "A" in your name? <b>${fullName.lastIndexOf("a")}</b><br/>`;
+        document.body.innerHTML += `The last 3 letters of your name are: <b>${fullName.slice(-3)}</b><br/>`;
+        document.body.innerHTML += `The words in your name are: <b>${fullName.split(" ")}</b><br/>`;
+        document.body.innerHTML += `Your name in capital letters: <b>${fullName.toUpperCase()}</b><br/>`;
+        document.body.innerHTML += `Your name in lowercase: <b>${fullName.toLowerCase()}</b><br/>`;
+    </script>
+</body>
+</html>
